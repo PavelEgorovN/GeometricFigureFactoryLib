@@ -13,9 +13,15 @@ namespace GeometricFigureFactoryLib
         private double sideA;
         private double sideB;
         private double sideC;
-        private double SideA { get => sideA; set => sideA = (value > 0) ? value : throw new ArgumentException("Side A of the triangle must be greater than 0"); }
-        private double SideB { get => sideB; set => sideB = (value > 0) ? value : throw new ArgumentException("Side B of the triangle must be greater than 0"); }
-        private double SideC { get => sideC; set => sideC = (value > 0) ? value : throw new ArgumentException("Side C of the triangle must be greater than 0"); }
+        private double SideA {
+            get => sideA;
+            set => sideA = (value > 0) ? value : throw new ArgumentException("Side A of the triangle must be greater than 0"); }
+        private double SideB { 
+            get => sideB;
+            set => sideB = (value > 0) ? value : throw new ArgumentException("Side B of the triangle must be greater than 0"); }
+        private double SideC { 
+            get => sideC; 
+            set => sideC = (value > 0) ? value : throw new ArgumentException("Side C of the triangle must be greater than 0"); }
         /// <summary>
         /// Initializes a new instance of the <see cref="Triangle"/> class.
         /// </summary>
