@@ -10,9 +10,9 @@ namespace Tests
     {
         [TestMethod]
         public void CreateTriangle_SetSides_ReturnArea() {
-            var geometricFigure = new Triangle(4, 4, 4);
+            var triangle = new Triangle(4, 4, 4);
 
-            var result = GeometricFigureFactory .GetArea(geometricFigure);
+            var result = GeometricFigureFactory.GetArea(triangle);
 
             Assert.AreEqual(6.928203230275509, result);
         }
@@ -26,12 +26,6 @@ namespace Tests
             new Triangle(sideA, sideB, sideC);
         }
 
-        [DataTestMethod]
-        [DataRow(3, 4, 5)]
-        public void CreateTriangle_SetSides_ReturnRectangularTriangleIsTrue(double sideA, double sideB, double sideC) {
-            Triangle geometricFigure = new Triangle(sideA, sideB, sideC);
-            Assert.IsTrue(geometricFigure.IsRectangular());
-        }
         [DataTestMethod]
         [DataRow(3, 4, 5)]
         [DataRow(4, 3, 5)]

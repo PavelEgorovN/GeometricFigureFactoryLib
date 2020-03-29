@@ -8,7 +8,7 @@ namespace Tests
     public class CircleTests
     {
         [TestMethod]
-        public void CreateCircle_SetRadius1_ReturnValidArea() {
+        public void CreateCircle_SetRadius_ReturnValidArea() {
             var circle = new Circle(1);
 
             var result = GeometricFigureFactory .GetArea(circle);
